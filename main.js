@@ -125,11 +125,11 @@ class Game extends Component {
 
 // ========================================
 
-ToyedReact.render(<Game />, document.body);
+let game = <Game />;
+ToyedReact.render(game, document.body);
 
-// let game = <Game />;
 
-// console.log(game.vdom);
+console.log(game.vdom);
 
 function calculateWinner(squares) {
   const lines = [
